@@ -1,0 +1,73 @@
+#include<stdio.h>
+#include<locale.h>
+#include<stdlib.h>
+#include<time.h>
+#include<string.h>
+
+class CAT {
+    
+    double weight;
+    
+    public:
+    
+    CAT(int we = 3) {
+        
+        weight = we;
+    }
+    
+    void talk();
+    void feed();
+    void know(double fod);
+    
+};
+
+void CAT::talk() {
+
+    printf("mmeeeooowww\n");
+    
+}
+
+void CAT::feed() {
+    
+    printf("hrhrhrhhhr\n");
+    
+}
+
+void CAT::know(double food) {
+    
+    weight += food;
+    printf("my height= %lf\n", weight);
+    
+}
+
+int main() {
+    
+    CAT a(3);
+    
+    for (int i = 0; i < 11; i++) {
+        
+        printf("choose write activite\n");
+        
+        int x;
+        
+        scanf_s("%d", &x);
+        
+        if (x == 1){
+            
+            a.talk();
+            
+        }
+        else if (x == 2) {
+            
+            a.feed();
+            
+            
+        }
+        else {
+            
+            a.know(0.25);
+        }
+        
+    }
+    
+}
