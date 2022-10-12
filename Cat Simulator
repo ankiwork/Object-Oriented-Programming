@@ -60,8 +60,7 @@ int main() {
         else if (x == 2) {
             
             a.feed();
-            
-            
+           
         }
         else {
             
